@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+ <!-- create column layout, side by side, showing responsive design
+    then create cards at the end  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +11,7 @@
 </head>
 <body>
     <nav class="my-navbar navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="ms-2 container-fluid">
           <a class="navbar-brand text-white fw-bold" href="#">
             <img src="/img/toyota.png" alt="Toyota Logo" width="30" height="24" class="d-inline-block align-text-top me-2">
             Toyota
@@ -35,7 +37,82 @@
           </div>
         </div>
     </nav>
-    <p class="ms-2 mt-2">Welcome to my website!</p>
+
+    <div class="row mt-2">
+        <p class="fs-1 text-center fw-bold shadow-sm">Toyota Corolla</p>
+        <div class="col-xs-12 col-lg-6 text-primary">
+            <img src="img/corolla.jpg" alt="Image of Toyota Corolla winning the race with many cars behind it" class="rounded-5 d-block mx-auto img-fluid shadow">
+        </div>
+        <div class="col-xs-12 col-lg-6 mt-2 mt-sm-0">
+            <p class="fs-2"><u>Features of Toyota Corolla</u></p>
+            <ul>
+                <li class="fs-4">Good Gas Mileage</li>
+                <li class="fs-4">Roomy Cabin Space</li>
+                <li class="fs-4">Apple Carplay or Android Auto</li>
+                <li class="fs-4">Supports Wireless Charging</li>
+            </ul>
+
+            <!-- <button type="button" class="btn btn-warning btn-lg" disabled>Buy Now</button> -->
+
+            <button type="button" class="btn btn-warning btn-lg mt-3">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <p class="fs-1 text-center fw-bold shadow-sm">Toyota RAV4</p>
+        <div class="col-xs-12 col-lg-6 text-primary">
+            <img src="img/rav4.jpeg" alt="Image of blue Toyota RAV4" class="rounded-5 d-block mx-auto img-fluid w-50 shadow">
+        </div>
+        <div class="col-xs-12 col-lg-6 mt-2 mt-sm-0">
+            <p class="fs-2"><u>Features of Toyota RAV4</u></p>
+            <ul>
+                <li class="fs-4">Larger Cabin Space and Comfy</li>
+                <li class="fs-4">Better for Families</li>
+                <li class="fs-4">Apple Carplay or Android Auto</li>
+                <li class="fs-4">Supports Wireless Charging</li>
+            </ul>
+
+            <button type="button" class="btn btn-primary btn-lg mt-3">Buy Now</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+        
+        <div class="row justify-content-center">
+            <p class="fs-1 mt-5 mb-5 d-flex justify-content-center text-success fw-bold">Explore More of our Cars</p>
+            <div class="col-xs-12 col-lg-4 mb-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="img/highlander.jpeg" class="card-img-top" alt="Image of Toyota Highlander">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota Highlander</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 mb-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="img/prius.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota Prius</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="img/sienna.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota Sienna</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     
